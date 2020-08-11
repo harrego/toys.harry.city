@@ -1,0 +1,99 @@
+@import "variables.scss";
+
+#header {
+  font-family: $global-font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 45px;
+}
+
+#header--logo {
+  margin-bottom: 2px;
+}
+
+#header--text {
+  font-size: 20px;
+  font-family: $global-font;
+  margin: 0;
+  letter-spacing: 4px;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 45px;
+
+  // @media (max-width: 600px) {
+  //   & {
+  //     margin-bottom: 35px;
+  //   }
+  // }
+
+  // @media (max-width: 375px) {
+  //   & {
+  //     margin-bottom: 20px;
+  //   }
+  // }
+}
+
+#header--options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header--options__checkbox-container {
+  margin: 0 20px;
+  label {
+    text-transform: uppercase;
+    margin-left: 2px;
+
+    @media (max-width: 600px) {
+      & {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+#header--options__tips {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header--options__tips--text {
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+
+  @media (max-width: 600px) {
+    & {
+      font-size: 13px;
+    }
+  }
+}
+
+#header--options__tips--save {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline !important;
+  background: none;
+  border: 0;
+  width: auto;
+  pointer: cursor;
+  font-weight: bold;
+
+  &:active {
+    color: black;
+    opacity: 0.5;
+  }
+
+  @media (max-width: 600px) {
+    & {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700');
+@import 'content.scss';
+
+@font-face {
+	font-family: 'VCR OSD Mono';
+	src: url('fonts/VCR_OSD_MONO.woff') format('woff');
+}
+
+body {
+  font-family: 'VCR OSD Mono', monospace;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#header--image {
+  margin-bottom: 20px;
+  height: 25px;
+}
+
+#hidden--image-upload {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+#noscript {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  p {
+    margin: 0;
+    width: 250px;
+    text-align: center;
+    line-height: 1.3;
+  }
+}
+
+#noscript--logo {
+  margin-bottom: 15px;
+}

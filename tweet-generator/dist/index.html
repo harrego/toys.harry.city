@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="Tweet Generator - HARRY.CITY" />
+  <meta property="og:description" content="Instantly create a customized tweet" />
+  <meta property="og:url" content="https://harry.city/tweet" />
+  <meta property="og:image" content="images/banner.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="images/banner.png" />
+
+  <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/h.svg" color="#000000">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Tweet Generator - HARRY.CITY</title>
+</head>
+<body>
+  <div id="content">
+    <div id="header">
+      <a href="https://harry.city">
+        <img id="header--logo" src="images/harrycity-black.svg" height="25px"/>
+      </a>
+      <h1 id="header--text">Tweet Generator</h1>
+
+      <div id="header--options">
+        <div class="header--options__checkbox-container">
+          <input type="checkbox" id="header--options__enable-reply" checked="true">
+          <label for="header--options__enable-reply">Show reply</label>
+        </div>
+
+        <div class="header--options__checkbox-container">
+          <input type="checkbox" id="header--options__user-verified" checked="true" />
+          <label for="header--options__user-verified">User verified</label>
+        </div>
+
+        <div class="header--options__checkbox-container">
+          <input type="checkbox" id="header--options__reply-user-verified" checked="true" />
+          <label for="header--options__reply-user-verified">Reply user verified</label>
+        </div>
+      </div>
+      <div id="header--options__tips">
+        <p id="header--options__tips--text">Click any element to change it</p>
+        <button id="header--options__tips--save">Save Tweet</button>
+      </div>
+    </div>
+
+    <div id="tweet--border">
+      <div id="tweet">
+        <div id="tweet--container">
+          <div id="tweet--info">
+            <div id="tweet--profile-picture">
+              <label for="options--profile-picture-upload" id="tweet--profile-picture__button"></label>
+            </div>
+            <div id="tweet--info__names">
+              <div id="tweet--info__names--name__container">
+                <p id="tweet--info__names--name" contenteditable="true">Donald J. Trump</p>
+                <img id="tweet--info__names--verified" class="tweet--verified" src="images/verified.svg" width="17px" height="17px" />
+              </div>
+              <p id="tweet--info__names--username" contenteditable="true">@realDonaldTrump</p>
+            </div>
+          </div>
+          <p id="tweet--text" contenteditable="true">Thank you Kanye, very cool!</p>
+          <div id="tweet--quote-tweet__container">
+            <div id="tweet--quote-tweet">
+              <div id="tweet--quote-tweet__names">
+                <p id="tweet--quote-tweet__names--name" contenteditable="true">KANYE WEST</p>
+                <img id="tweet--quote__names--verified" class="tweet--verified" src="images/verified.svg" width="15px" height="15px" />
+                <p id="tweet--quote-tweet__names--username" contenteditable="true">@kanyewest</p>
+              </div>
+
+              <p id="tweet--quote-tweet__text" contenteditable="true">You don't have to agree with trump but the mob can't make me not love him. We are both dragon energy. He is my brother. I love everyone. I don't agree with everything anyone does. That's what makes us individuals. And we have the right to independent thought.</p>
+            </div>
+          </div>
+
+          <p id="tweet--details" contenteditable="true">12:33 PM - 25 Apr 2018</p>
+        </div>
+      </div>
+    </div>
+
+    <input id="options--profile-picture-upload" type="file" accept="image/*" />
+  </div>
+
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
